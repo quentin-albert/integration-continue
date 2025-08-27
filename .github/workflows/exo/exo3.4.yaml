@@ -9,7 +9,7 @@ jobs:
       - run: echo 'je suis le premier'  
 
   print_second:
-    needs: print_first
+    needs: print_first     
     runs-on: ubuntu-latest
     steps:
       - run:  echo 'je suis le second'  
