@@ -6,8 +6,8 @@ on:
 
 jobs:
   message-si-merge:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
 
     steps:
       - name: Afficher un message si PR est mergée
