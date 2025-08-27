@@ -1,0 +1,12 @@
+name: exo_3.3
+
+on: 
+  workflow_run: 
+    workflows: [exo_3.2]
+    types: completed
+
+jobs: 
+  print_exo3_2:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo 'exo3.2 est terminé, c mon tour'  

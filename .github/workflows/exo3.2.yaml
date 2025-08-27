@@ -1,0 +1,14 @@
+name: exo_3.2
+
+on:
+  pull_request:
+    types: closed
+
+jobs:
+  message-si-merge:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher un message si PR est mergée
+        run: echo "La pull request a été mergée avec succès !"  
