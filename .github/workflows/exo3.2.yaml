@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Afficher un message si PR est mergée
-        run: echo "La pull request a été mergée avec succès !"  
+        run: echo "La pull request a été mergée "  
