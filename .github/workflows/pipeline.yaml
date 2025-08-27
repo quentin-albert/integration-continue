@@ -1,0 +1,13 @@
+name: exo_4
+on: workflow_dispatch
+
+jobs: 
+  fruit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        fruits: [pomme, fraise, raisin, poire]
+        noms: [quentin, jean, leo]
+
+    steps: 
+      - run: echo '${{ matrix.noms }} mange une ${{ matrix.fruits}} et il aime ca'  
